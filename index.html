@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dev.finance$</title>
-</head>
-
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
 <body>
-    <head>
+
+    <header>
         <h1 id="logo">dev.fincance$</h1>
-    </head>
-    <main>      
-        <section id="Balance">
+    </header>
+    <main class="container">
+        <section id="balance">
             <h2>Balanço</h2>
             <div class="card">
                 <h3>Entradas</h3>
-                <p>R$ 3000,00</p>
+                <p>R$ 3000,00</p>   
             </div>
             <div class="card">
                 <h3>Saídas</h3>
                 <p>R$ 2000,00</p>
             </div>
-            <div class="card">
+            <div class="card total">
                 <h3>Total</h3>
-            <p>R$ 1000,00</p>
-            </div>    
+                <p>R$ 1000,00</p>
+            </div>
         </section>
 
-        <section id="Transaction">
-            <h3>Transações</h3>
+        <section id="transaction">
+            <h2>Transações</h2>
 
             <table id="data-table">
                 <thead>
@@ -39,21 +41,21 @@
                         <th>Data</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody> 
                     <tr>
-                        <td>Luz</td>
-                        <td>-R$100 </td>
-                        <td>28/01/2021</td>
+                        <td class="description">Luz</td>
+                        <td class="expense">-R$100 </td>
+                        <td class="date">28/01/2021</td>
+                    </tr>   
+                    <tr>
+                        <td class="description">Criação de Website</td>
+                        <td class="income">R$ 5000,00</td>
+                        <td class="date">29/01/2021</td>
                     </tr>
                     <tr>
-                        <td>Criação de Website</td>
-                        <td>R$ 5000,00</td>
-                        <td>29/01/2021</td>
-                    </tr>
-                    <tr>
-                        <td>Aluguel</td>
-                        <td>-R$500,00</td>
-                        <td>30/01/2021</td>
+                        <td class="description">Aluguel</td>
+                        <td class="expense">-R$500,00</td>
+                        <td class="date">30/01/2021</td>
                     </tr>
                 </tbody>
             </table>
