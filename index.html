@@ -49,7 +49,8 @@
 
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
-            <a href="#" class="button new">+ Nova Transações</a>
+            <a href="#" class="button new"
+            onclick="Modal.open()">+ Nova Transações</a>
             <table id="data-table">
 
                 <thead>
@@ -71,7 +72,7 @@
                         <td class="description">Criação de Website</td>
                         <td class="income">R$ 5000,00</td>
                         <td class="date">29/01/2021</td>
-                        <td><img src="./assets/plus.svg" alt=""></td>
+                        <td><img src="./assets/minus.svg" alt=""></td>
                     </tr>
                     <tr>
                         <td class="description">Aluguel</td>
@@ -86,9 +87,10 @@
 
     </main>
 
-    <div class="modal-overlay active">
+    <div class="modal-overlay">
         <div class="modal">
             <div id="form">
+
                 <h2>Nova Transação</h2>
                 <form action="">
 
@@ -114,7 +116,9 @@
                     </div>
 
                     <div class="input-group actions">
-                        <a href="#" class="button cancel">Cancelar</a>
+                        <a href="#" class="button cancel"
+                        onclick="Modal.close()"
+                        >Cancelar</a>
                         <button>Salvar</button>
                     </div>
                 </form>
@@ -131,9 +135,7 @@
 
 
 
-
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
